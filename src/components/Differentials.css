@@ -1,0 +1,30 @@
+.differentials {
+  padding: 48px 0 32px 0;
+  background: #f8f9fb;
+}
+
+.differentials__inner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.differentials__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.differentials__list li {
+  background: #fff;
+  border-radius: 8px;
+  padding: 14px 28px;
+  font-weight: 500;
+  color: #1a1a1a;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}

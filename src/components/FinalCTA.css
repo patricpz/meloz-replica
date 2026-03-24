@@ -1,0 +1,20 @@
+.finalcta {
+  padding: 64px 0 48px 0;
+  background: #fff;
+}
+
+.finalcta__inner {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.finalcta__desc {
+  color: #444;
+  font-size: 1.1rem;
+  margin: 18px 0 24px 0;
+}
+
+.finalcta__btn {
+  margin-top: 8px;
+}

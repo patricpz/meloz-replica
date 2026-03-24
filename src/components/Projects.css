@@ -1,0 +1,40 @@
+.projects {
+  padding: 64px 0 48px 0;
+  background: #fff;
+}
+
+.projects__inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.projects__desc {
+  color: #444;
+  font-size: 1.1rem;
+  margin-bottom: 28px;
+}
+
+.projects__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+}
+
+.projects__list li {
+  background: #f8f9fb;
+  border-radius: 8px;
+  padding: 14px 28px;
+  font-weight: 500;
+  color: #1a1a1a;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.projects__btn {
+  margin-top: 12px;
+}

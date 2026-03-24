@@ -1,0 +1,16 @@
+.diferencial {
+  padding: 64px 0 48px 0;
+  background: #f8f9fb;
+}
+
+.diferencial__inner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.diferencial__desc {
+  color: #444;
+  font-size: 1.1rem;
+  margin-top: 18px;
+}
