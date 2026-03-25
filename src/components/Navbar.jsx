@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Button from './ui/Button'
+import logoMeloz from '../assets/logo/h02.png'
 
 const WHATSAPP = 'https://api.whatsapp.com/send?phone=5519996509154'
 
@@ -51,11 +52,9 @@ export default function Navbar() {
           whileTap={{ scale: 0.95 }}
         >
           <img
-            src="https://meloz.com.br/wp-content/uploads/2021/05/logo.png"
+            src={logoMeloz}
             alt="Meloz"
-            className={`h-10 transition-all duration-300 ${
-              scrolled ? 'filter-none' : 'brightness-0 invert'
-            }`}
+            className="h-12 transition-all duration-300"
           />
         </motion.a>
 

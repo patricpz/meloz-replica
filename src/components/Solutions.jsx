@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
-import Section from './ui/Section'
 import SectionTitle from './ui/SectionTitle'
 import Card from './ui/Card'
+import bannerSolutions from '../assets/Banner 1.jpg'
 
 export default function Solutions() {
   const solutions = [
@@ -51,40 +51,59 @@ export default function Solutions() {
   }
 
   return (
-    <Section id="solucoes" bgColor="bg-gradient-to-b from-background to-white">
-      <SectionTitle
-        subtitle="SOLUÇÕES"
-        title="Nossas soluções"
-        description="Tecnologia para construir novos produtos digitais que geram crescimento e inovação"
-      />
+    <motion.section
+      id="solucoes"
+      className="w-full relative overflow-hidden py-3xl px-md md:px-lg lg:px-2xl"
+      style={{
+        backgroundImage: `url(${bannerSolutions})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+      }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true, amount: 0.1 }}
+    >
+      {/* Overlay para legibilidade */}
+      <div className="absolute inset-0 bg-white/85 backdrop-blur-sm" style={{ zIndex: 1 }} />
 
-      <motion.div
-        className="grid md:grid-cols-2 gap-8 lg:gap-10"
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-      >
-        {solutions.map((solution, idx) => (
-          <motion.div
-            key={solution.title}
-            variants={itemVariants}
-          >
-            <Card
-              className="h-full p-8 md:p-10"
-              hoverable={true}
+      {/* Content */}
+      <div className="container relative z-10">
+        <SectionTitle
+          subtitle="SOLUÇÕES"
+          title="Nossas soluções"
+          description="Tecnologia para construir novos produtos digitais que geram crescimento e inovação"
+        />
+
+        <motion.div
+          className="grid md:grid-cols-2 gap-8 lg:gap-10"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          {solutions.map((solution, idx) => (
+            <motion.div
+              key={solution.title}
+              variants={itemVariants}
             >
-              <div className="text-5xl mb-4">{solution.icon}</div>
-              <h3 className="font-display text-2xl font-bold text-darkText mb-4">
-                {solution.title}
-              </h3>
-              <p className="text-lightText text-base leading-relaxed">
-                {solution.description}
-              </p>
-            </Card>
-          </motion.div>
-        ))}
-      </motion.div>
-    </Section>
+              <Card
+                className="h-full p-8 md:p-10"
+                hoverable={true}
+              >
+                <div className="text-5xl mb-4">{solution.icon}</div>
+                <h3 className="font-display text-2xl font-bold text-darkText mb-4">
+                  {solution.title}
+                </h3>
+                <p className="text-lightText text-base leading-relaxed">
+                  {solution.description}
+                </p>
+              </Card>
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
+    </motion.section>
   )
 }

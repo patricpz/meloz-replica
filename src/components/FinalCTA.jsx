@@ -54,7 +54,6 @@ export default function FinalCTA() {
             variant="primary"
             size="lg"
             onClick={() => window.open(WHATSAPP, '_blank')}
-            className="bg-white text-primary hover:bg-gray-100"
           >
             Falar com especialista
           </Button>

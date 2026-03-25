@@ -5,7 +5,7 @@ import SectionTitle from './ui/SectionTitle'
 const services = [
   {
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+      <svg className="w-8 h-8 text-primary" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2">
         <rect x="3" y="3" width="18" height="18" rx="2" />
         <path d="M3 9h18M9 21V9" />
       </svg>
@@ -16,7 +16,7 @@ const services = [
   },
   {
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+      <svg className="w-8 h-8 text-primary" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2">
         <polyline points="16 18 22 12 16 6" />
         <polyline points="8 6 2 12 8 18" />
       </svg>
@@ -27,7 +27,7 @@ const services = [
   },
   {
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+      <svg className="w-8 h-8 text-primary" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2">
         <rect x="5" y="2" width="14" height="20" rx="2" />
         <line x1="12" y1="18" x2="12.01" y2="18" />
       </svg>
@@ -38,7 +38,7 @@ const services = [
   },
   {
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+      <svg className="w-8 h-8 text-primary" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2">
         <circle cx="12" cy="12" r="10" />
         <path d="M12 8v4l3 3" />
       </svg>

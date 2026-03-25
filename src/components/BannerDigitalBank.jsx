@@ -80,7 +80,6 @@ export default function BannerDigitalBank() {
                 variant="primary"
                 size="lg"
                 onClick={() => window.open(WHATSAPP, '_blank')}
-                className="bg-white text-primary hover:bg-gray-100"
               >
                 Falar com um especialista
               </Button>
