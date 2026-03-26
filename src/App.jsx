@@ -18,7 +18,7 @@ function App() {
       <main>
         <Home />
         <WhatWeDo />
-        <Solutions />
+        {/* <Solutions /> */}
         <Projects />
         <Diferencial />
         <FinalCTA />
