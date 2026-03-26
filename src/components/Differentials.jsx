@@ -3,11 +3,11 @@ import Section from './ui/Section'
 
 export default function Differentials() {
   const differentials = [
-    '✓ Experiência em produtos digitais',
-    '✓ Visão de negócio',
-    '✓ Soluções escaláveis',
-    '✓ Experiência financeira',
-    '✓ Desenvolvimento sob medida',
+    'Experiência em produtos digitais',
+    'Visão de negócio',
+    'Soluções escaláveis',
+    'Experiência financeira',
+    'Desenvolvimento sob medida',
   ]
 
   const containerVariants = {
@@ -41,9 +41,9 @@ export default function Differentials() {
           {differentials.map((diff, idx) => (
             <motion.div
               key={idx}
-              className="flex items-center gap-4 p-4 rounded-lg bg-white hover:bg-primary/5 border border-primary/10 hover:border-primary/30 transition-all duration-300 group"
+              className="flex items-center gap-4 p-4 rounded-lg bg-white shadow-lg hover:shadow-xl border border-transparent hover:border-primary/30 transition-all duration-300 group"
               variants={itemVariants}
-              whileHover={{ paddingLeft: 24, borderColor: '#F20734' }}
+              whileHover={{ paddingLeft: 24 }}
             >
               <span className="text-2xl text-primary font-bold">→</span>
               <span className="text-lg font-medium text-darkText group-hover:text-primary transition-colors">

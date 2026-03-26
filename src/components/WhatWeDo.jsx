@@ -12,6 +12,7 @@ export default function WhatWeDo() {
         </svg>
       ),
       label: 'Banco digital',
+      description: 'Permita que sua empresa ofereça serviços financeiros com sua própria marca. Conta digital, cartões, pagamentos, PIX e outras soluções que podem gerar novas fontes de receita e fortalecer o relacionamento com seus clientes.',
     },
     {
       icon: (
@@ -21,6 +22,7 @@ export default function WhatWeDo() {
         </svg>
       ),
       label: 'Aplicativos mobile',
+      description: 'Criamos aplicativos mobile para empresas que querem oferecer serviços digitais modernos, conectando clientes e negócios em uma única experiência.',
     },
     {
       icon: (
@@ -30,6 +32,7 @@ export default function WhatWeDo() {
         </svg>
       ),
       label: 'Plataformas digitais',
+      description: 'Desenvolvemos sistemas completos para diferentes modelos de negócio, como marketplaces, logística, saúde e plataformas de serviços.',
     },
     {
       icon: (
@@ -40,6 +43,7 @@ export default function WhatWeDo() {
         </svg>
       ),
       label: 'Integrações tecnológicas',
+      description: 'Integramos diferentes sistemas e tecnologias para que sua empresa opere com mais eficiência e conectividade.',
     },
   ]
 
@@ -96,9 +100,12 @@ export default function WhatWeDo() {
             <div className="text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
               {feature.icon}
             </div>
-            <h3 className="font-display font-semibold text-lg text-darkText">
+            <h3 className="font-display font-semibold text-lg text-darkText mb-3">
               {feature.label}
             </h3>
+            <p className="text-sm text-lightText leading-relaxed">
+              {feature.description}
+            </p>
           </motion.div>
         ))}
       </motion.div>

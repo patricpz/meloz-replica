@@ -1,6 +1,5 @@
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import BannerDigitalBank from './components/BannerDigitalBank'
+import Home from './components/Home'
 import WhatWeDo from './components/WhatWeDo'
 import Solutions from './components/Solutions'
 import Projects from './components/Projects'
@@ -17,8 +16,7 @@ function App() {
     <>
       <Navbar />
       <main>
-        <Hero />
-        <BannerDigitalBank />
+        <Home />
         <WhatWeDo />
         <Solutions />
         <Projects />

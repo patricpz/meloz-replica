@@ -64,9 +64,7 @@ export default function Navbar() {
             <motion.a
               key={link.label}
               href={link.href}
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                scrolled ? 'text-darkText' : 'text-white'
-              }`}
+              className={`text-sm font-medium transition-colors hover:text-primary text-darkText`}
               whileHover={{ color: '#F20734' }}
             >
               {link.label}
