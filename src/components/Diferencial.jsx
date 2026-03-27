@@ -29,10 +29,11 @@ export default function Diferencial() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="font-display text-5xl md:text-6xl font-bold text-darkText mb-6 leading-tight">
-            Mais que desenvolvimento.<br />Construção de negócios digitais.
+          <h2 className="font-display text-3xl sm:text-4xl md:text-6xl font-bold text-darkText mb-4 md:mb-6 leading-tight">
+            <span className="block">Mais que desenvolvimento.</span>
+            <span className="block">Construção de negócios digitais.</span>
           </h2>
-          <p className="text-xl text-lightText leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-lightText leading-relaxed">
             A Meloz combina tecnologia, experiência e infraestrutura financeira para criar soluções que geram crescimento real.
           </p>
         </motion.div>
