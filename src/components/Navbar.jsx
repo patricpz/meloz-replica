@@ -37,7 +37,7 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? 'bg-white/90 backdrop-blur-md shadow-lg py-md'
-          : 'bg-transparent text-white py-lg'
+          : 'bg-white/95 backdrop-blur-md shadow-sm py-md md:bg-transparent md:backdrop-blur-none md:shadow-none md:py-lg'
       }`}
       initial="hidden"
       animate="visible"
@@ -54,7 +54,7 @@ export default function Navbar() {
           <img
             src={logoMeloz}
             alt="Meloz"
-            className="h-12 transition-all duration-300"
+            className="h-10 md:h-12 transition-all duration-300"
           />
         </motion.a>
 
@@ -88,7 +88,7 @@ export default function Navbar() {
         >
           <motion.span
             className={`block w-6 h-0.5 origin-center transition-colors ${
-              scrolled ? 'bg-darkText' : 'bg-white'
+              scrolled ? 'bg-darkText' : 'bg-darkText md:bg-white'
             }`}
             animate={
               menuOpen
@@ -98,13 +98,13 @@ export default function Navbar() {
           />
           <motion.span
             className={`block w-6 h-0.5 origin-center transition-colors ${
-              scrolled ? 'bg-darkText' : 'bg-white'
+              scrolled ? 'bg-darkText' : 'bg-darkText md:bg-white'
             }`}
             animate={menuOpen ? { opacity: 0 } : { opacity: 1 }}
           />
           <motion.span
             className={`block w-6 h-0.5 origin-center transition-colors ${
-              scrolled ? 'bg-darkText' : 'bg-white'
+              scrolled ? 'bg-darkText' : 'bg-darkText md:bg-white'
             }`}
             animate={
               menuOpen
