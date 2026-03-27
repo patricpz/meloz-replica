@@ -3,30 +3,30 @@ import Section from './ui/Section'
 import SectionTitle from './ui/SectionTitle'
 import Button from './ui/Button'
 import ProjectCard from './ui/ProjectCard'
-import mockup1 from '../assets/Mockup 1.jpg'
-import mockup2 from '../assets/Mockup 2.jpg'
-import mockup3 from '../assets/Mockup 3.jpg'
+import mockup4 from '../assets/mockup/Design sem nome (4).png'
+import mockup5 from '../assets/mockup/Design sem nome (5).png'
+import mockup6 from '../assets/mockup/Design sem nome (6).png'
 
 export default function Projects() {
   const projects = [
     {
-      image: mockup1,
+      image: mockup4, // Restored original image
       title: 'Banco Digital White-Label',
       description: 'Solução completa de banco digital com conta, cartão, pagamentos e PIX integrados.',
       tags: ['Fintech', 'React', 'Node.js'],
     },
     {
-      image: mockup2,
+      image: mockup6, // Restored original image
       title: 'Plataforma Médica',
       description: 'Sistema de telemedicina com agendamento, consultas virtuais e prontuário eletrônico.',
       tags: ['Healthcare', 'React Native', 'Backend'],
     },
     {
-      image: mockup3,
+      image: mockup5, // Restored original image
       title: 'Marketplace de Serviços',
       description: 'Plataforma conectando prestadores de serviço com clientes, com pagamento integrado.',
       tags: ['Marketplace', 'Web App', 'Stripe'],
-    },
+    }
   ]
 
   const containerVariants = {
@@ -36,14 +36,6 @@ export default function Projects() {
       transition: {
         staggerChildren: 0.1,
       },
-    },
-  }
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
     },
   }
 

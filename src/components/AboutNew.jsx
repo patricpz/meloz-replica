@@ -46,7 +46,7 @@ export default function AboutNew() {
 
       {/* Highlights Grid */}
       <motion.div
-        className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-16"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-12 md:mb-16"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -55,7 +55,7 @@ export default function AboutNew() {
         {highlights.map((item, idx) => (
           <motion.div
             key={idx}
-            className="relative p-6 md:p-8 rounded-xl bg-white shadow-lg border border-primary/10 hover:border-primary/30 transition-all duration-300"
+            className="relative p-5 md:p-8 rounded-xl bg-white shadow-lg border border-primary/10 hover:border-primary/30 transition-all duration-300"
             variants={highlightVariants}
             whileHover={{ translateY: -4, boxShadow: '0 20px 25px rgb(242, 7, 52, 0.1)' }}
           >

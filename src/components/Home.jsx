@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import bannerHero from '../assets/Banner 1.jpg'
 import bannerDigital from '../assets/Banner 2.jpg'
+import bannerMobile from '../assets/mockup/banner_mobile.png'
 
 function BackgroundCarousel({ images, interval = 5000 }) {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -50,9 +51,20 @@ export default function Home() {
   const backgroundImages = [bannerHero, bannerDigital]
 
   return (
-    <section className="relative h-screen w-full mx-auto overflow-hidden pt-24 md:pt-32 flex flex-col">
-      {/* Background Carousel */}
-      <BackgroundCarousel images={backgroundImages} interval={5000} />
+    <section className="relative min-h-[100svh] w-full mx-auto overflow-hidden pt-20 md:pt-28 lg:pt-32">
+      {/* Background Carousel for Desktop */}
+      <div className="absolute inset-0 hidden md:block">
+        <BackgroundCarousel images={backgroundImages} interval={5000} />
+      </div>
+
+      {/* Banner for Mobile */}
+      <div className="absolute inset-0 block md:hidden">
+        <img
+          src={bannerMobile}
+          alt="Mobile Banner"
+          className="w-full h-full object-cover object-center"
+        />
+      </div>
 
       {/* Wave SVG */}
       <div className="absolute bottom-0 left-0 right-0 w-full h-24 md:h-32 z-20">

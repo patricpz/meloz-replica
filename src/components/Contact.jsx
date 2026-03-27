@@ -38,7 +38,7 @@ export default function Contact() {
             <p className="text-primary text-sm font-bold uppercase tracking-wider mb-4">
               Fale conosco
             </p>
-            <h2 className="font-display text-5xl md:text-6xl font-bold text-darkText mb-6 leading-tight">
+            <h2 className="font-display text-4xl md:text-6xl font-bold text-darkText mb-6 leading-tight">
               Pronto para transformar o seu <span className="text-gradient">negócio digital?</span>
             </h2>
             <p className="text-lg text-lightText leading-relaxed mb-8 md:mb-12">
@@ -83,7 +83,7 @@ export default function Contact() {
 
           {/* Right CTA Box */}
           <motion.div
-            className="bg-gradient-to-br from-primary/5 to-secondary/5 border border-primary/20 rounded-2xl p-10 md:p-12 sticky top-32"
+            className="bg-gradient-to-br from-primary/5 to-secondary/5 border border-primary/20 rounded-2xl p-6 sm:p-8 md:p-12 lg:sticky lg:top-32"
             variants={itemVariants}
             whileHover={{ boxShadow: '0 20px 40px rgba(242, 7, 52, 0.1)' }}
             transition={{ duration: 0.3 }}
