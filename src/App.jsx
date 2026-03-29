@@ -21,10 +21,11 @@ function App() {
         {/* <Solutions /> */}
         <Projects />
         <Diferencial />
-        <FinalCTA />
         <AboutNew />
         <Differentials />
-        <Contact />
+        <FinalCTA />
+
+        {/* <Contact /> */}
       </main>
       <Footer />
     </>

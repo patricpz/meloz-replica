@@ -18,7 +18,7 @@ const columns = [
   },
   {
     title: 'Institucional',
-    links: ['Sobre nós', 'Cases de Sucesso', 'Blog', 'Carreiras', 'Contato'],
+    links: ['Sobre nós', 'Cases de Sucesso', 'Contato'],
   },
 ]
 

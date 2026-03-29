@@ -1,32 +1,30 @@
 import { motion } from 'framer-motion'
 import Section from './ui/Section'
 import SectionTitle from './ui/SectionTitle'
-import Button from './ui/Button'
 import ProjectCard from './ui/ProjectCard'
-import mockup4 from '../assets/mockup/Design sem nome (4).png'
-import mockup5 from '../assets/mockup/Design sem nome (5).png'
-import mockup6 from '../assets/mockup/Design sem nome (6).png'
+import banco1 from '../assets/mockup/banco_1.png'
+import banco2 from '../assets/mockup/banco_2.png'
+import banco3 from '../assets/mockup/banco_3.png'
+import banco4 from '../assets/mockup/banco_4.png'
+import banco6 from '../assets/mockup/banco_6.png'
+import medico1 from '../assets/mockup/medico_1.png'
+
+const bancoDigitalImages = [banco1, banco2, banco3, banco4, banco6]
 
 export default function Projects() {
   const projects = [
     {
-      image: mockup4, // Restored original image
+      images: bancoDigitalImages,
       title: 'Banco Digital White-Label',
       description: 'Solução completa de banco digital com conta, cartão, pagamentos e PIX integrados.',
       tags: ['Fintech', 'React', 'Node.js'],
     },
     {
-      image: mockup6, // Restored original image
+      image: medico1,
       title: 'Plataforma Médica',
       description: 'Sistema de telemedicina com agendamento, consultas virtuais e prontuário eletrônico.',
       tags: ['Healthcare', 'React Native', 'Backend'],
     },
-    {
-      image: mockup5, // Restored original image
-      title: 'Marketplace de Serviços',
-      description: 'Plataforma conectando prestadores de serviço com clientes, com pagamento integrado.',
-      tags: ['Marketplace', 'Web App', 'Stripe'],
-    }
   ]
 
   const containerVariants = {
@@ -48,25 +46,34 @@ export default function Projects() {
       />
 
       <motion.div
-        className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12"
+        className="grid grid-cols-1 gap-6 md:grid-cols-6 md:gap-8 mb-12"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
       >
         {projects.map((project, idx) => (
-          <ProjectCard
+          <div
             key={project.title}
-            image={project.image}
-            title={project.title}
-            description={project.description}
-            tags={project.tags}
-            index={idx}
-          />
+            className={
+              idx === 0
+                ? 'md:col-span-3 lg:col-span-2 lg:col-start-2'
+                : 'md:col-span-3 lg:col-span-2 lg:col-start-4'
+            }
+          >
+            <ProjectCard
+              image={project.image}
+              images={project.images}
+              title={project.title}
+              description={project.description}
+              tags={project.tags}
+              index={idx}
+            />
+          </div>
         ))}
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         className="text-center"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -80,7 +87,7 @@ export default function Projects() {
         >
           Ver todos os projetos
         </Button>
-      </motion.div>
+      </motion.div> */}
     </Section>
   )
 }
